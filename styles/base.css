@@ -2,7 +2,7 @@
     --primary-color: #e1f2fe; 
     --secondary-color: #98d2eb; 
     --background-color: #ecf0f1; 
-    --header-color: #02394A; 
+    --header-color: #2c3e50; 
     --text-color: #2c3e50; 
     --accent-color: black; 
     --white: #ffffff;
@@ -29,7 +29,7 @@ header {
         justify-content: center;
         padding: 20px;
         border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+        border-radius: 5px;
 }
 
 #profile-picture {
@@ -49,7 +49,7 @@ header {
 
 
 nav {
-    background-color:#0892A5;
+    background-color: #2c3e50;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -60,17 +60,61 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 7px;
 }
 
 nav li a {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     font-family: "Caveat", cursive;
+    text-decoration: none;
+    justify-content: space-between;
 }
 
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: rem .1vw;
+    position: absolute;
+    top: 20;
+    right: 1.2rem;
+}
+
+ul.menulinks li a {
+    display: flex;
+    padding: .75rem 2vw;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.menulinks {
+    display: none;
+    list-style-type: none;
+}
+
+#myButton.open::before {
+    content: "x";
+}
+
+ul.open.menuLinks {
+    display: block;
+}
 
 
 .nav #nav-bar li #home {

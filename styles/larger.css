@@ -2,7 +2,7 @@
     --primary-color: #e1f2fe; 
     --secondary-color: #98d2eb; 
     --background-color: #ecf0f1;
-    --header-color: #02394A; 
+    --header-color: #2c3e50; 
     --text-color: #2c3e50; 
     --accent-color: black; 
     --white: #ffffff;
@@ -46,13 +46,13 @@ header {
 }
 
 .nav {
-    background-color: #0892A5;
+    background-color: #2c3e50;
 }
 
 #nav-bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ header {
 }
 
 #nav-bar li {
-    margin: 0 70px;
+    margin: 70px;
     list-style: none;
     color: white;
     font-size: 18px;
@@ -68,12 +68,28 @@ header {
     letter-spacing: 1px;
     line-height: 1.2;
     text-align: center;
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-#home {
+@media only screen and (min-width: 38rem) {
+
+    #myButton {
+        display: none;
+    }
+
+    ul.menulinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+  #home {
     margin-right: 0;
 }
 
