@@ -19,8 +19,6 @@ body {
    
 }
 
-
-
 header {
     background-color: var(--header-color);
     font-family: "Caveat", cursive;
@@ -70,7 +68,6 @@ nav li a {
     letter-spacing: 1px;
     font-family: "Caveat", cursive;
     text-decoration: none;
-    justify-content: space-between;
 }
 
 #myButton::before {
@@ -87,8 +84,8 @@ nav li a {
     text-align: right;
     padding: rem .1vw;
     position: absolute;
-    top: 20;
-    right: 1.2rem;
+    top: 0;
+    right: 2vw;
 }
 
 ul.menulinks li a {
